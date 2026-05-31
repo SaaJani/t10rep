@@ -19,7 +19,7 @@
   },
   "scripts": {
     "dev": "app.js",
-    "start": "app.js",
+    "start": "node app.js",
     "test": "mocha"
   },
   "dependencies": {
