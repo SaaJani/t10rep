@@ -4,7 +4,7 @@ import studentRouter from './routes/students.js';
 import userRouter from './routes/users.js';
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Connect to the database
 dbconnection();

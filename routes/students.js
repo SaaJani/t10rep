@@ -4,7 +4,7 @@ import authorize from '../verifytoken.js';
 const router = express.Router();
 
 router.get('/', StudentController.findAll);
-/*
+
 router.get('/id/:id', authorize, StudentController.findById);
 router.get(
   '/studentcode/:studentcode',
@@ -38,7 +38,7 @@ router.get(
   '/findstudentswithcourse/coursecode/:coursecode',
   authorize,
   StudentController.findStudentsWithCourse,
-); */
+);
 
 export default router;
 
