@@ -5,7 +5,7 @@ import 'dotenv/config';
 const verifyToken = (req, res, next) => {
   // otetaan vastaan token kahdella vaihtoehtoisella tavalla riippuen siitä onko se lähetetty
   // bodyssä vai headerissa
-  const token = req.body.token || req.headers['x-access-token'];
+  const token = req.body?.token || req.headers['x-access-token'];
   // dekoodataan eli puretaan token
   if (token) {
     // verify tutkii tokenin voimassaolon ja salausmuuttujan

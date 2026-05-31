@@ -29,6 +29,7 @@ const StudentController = {
       res.status(200).send(student);
     } catch (err) {
       console.error(err);
+      res.status(500).send('Server error');
     }
   },
 
